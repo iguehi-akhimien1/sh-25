@@ -1,7 +1,17 @@
-import Message from './Message';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./Home.tsx";
+import Features from "./Features";
 
 function App() {
-    return <div><Message /></div>;
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/features" element={<Features />} />
+      </Routes>
+    </BrowserRouter>
+  );
 }
 
 export default App;
