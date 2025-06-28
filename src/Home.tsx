@@ -1,12 +1,12 @@
 import React from "react";
+import Layout from "./Layout";
 import Message from "./Message";
 
 function Home() {
   return (
-    <div>
-      <h1>Welcome!</h1>
+    <Layout>
       <Message />
-    </div>
+    </Layout>
   );
 }
 
